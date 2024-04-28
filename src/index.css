@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  height: 100svh;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.925);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.App h1 {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 2.5em;
+}
+
+.App img {
+  height: 450px;
+  border: 1px solid rgba(255, 255, 255, 0.236);
+  border-radius: 1em;
+}
+
+.content {
+  max-width: 50%;
+  min-width: 375px;
+  max-height: 450px;
+  line-height: 1.6;
+  font-size: 1.1em;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+    backdrop-filter: blur(10px);
+  }
+
+  .content {
+    max-width: 80%;
+    height: 100%;
+    line-height: 1.6;
+    font-size: 1.1em;
+    overflow:auto;
+  }
+}
